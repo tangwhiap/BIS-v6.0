@@ -1,0 +1,62 @@
+========================================
+| Welcome to Bayesian Inversion System |
+|              Version 6.0             |
+|     Email: tangwh@mail.iap.ac.cn     |
+========================================
+Import packages...
+Done.
+New directory /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL has been created.
+Successfully create ExpREAL_independent objcet.
+Successfully create ExpREAL_independent_priorFnet objcet.
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 654, in process_emiss
+    process_emiss(self, kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 773, in process_emiss
+    origEmiss, origLON, origLAT = getDataFun(Current, **getDataFun_kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/emiss/cfta_1x1.py", line 24, in interface
+    datain = Dataset(infile,'r')
+  File "netCDF4/_netCDF4.pyx", line 2321, in netCDF4._netCDF4.Dataset.__init__
+  File "netCDF4/_netCDF4.pyx", line 1885, in netCDF4._netCDF4._ensure_nc_success
+FileNotFoundError: [Errno 2] No such file or directory: b'/home/tangwh/datasets/VEGAS_Cfta/VEGAS_CFta_hr_Jan2000_Oct2020_1.0.nc'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./BIS_run.py", line 20, in <module>
+    app.app_run()
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/app.py", line 88, in app_run
+    case.app_run(*args, **kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/main/main_class.py", line 79, in app_run
+    self.objExp.exp_run(*args, **kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 677, in exp_run
+    self.exp_initialize()
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/REAL/REAL_base/main_class.py", line 143, in exp_initialize
+    self.make_prior_emiss(self.sectors_PriorSetting)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/REAL/independent_priorFnet/main_class.py", line 204, in make_prior_emiss
+    ExpREAL_independent.make_prior_emiss(self, sectors_PriorSetting)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 356, in make_prior_emiss
+    pool.map(self.process_emiss, parallelArgs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 268, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 654, in process_emiss
+    process_emiss(self, kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 773, in process_emiss
+    origEmiss, origLON, origLAT = getDataFun(Current, **getDataFun_kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/emiss/cfta_1x1.py", line 24, in interface
+    datain = Dataset(infile,'r')
+  File "netCDF4/_netCDF4.pyx", line 2321, in netCDF4._netCDF4.Dataset.__init__
+  File "netCDF4/_netCDF4.pyx", line 1885, in netCDF4._netCDF4._ensure_nc_success
+FileNotFoundError: [Errno 2] No such file or directory: b'/home/tangwh/datasets/VEGAS_Cfta/VEGAS_CFta_hr_Jan2000_Oct2020_1.0.nc'

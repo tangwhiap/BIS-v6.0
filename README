@@ -1,0 +1,220 @@
+##############################################################
+                 Bayesian Inversion System
+                        version 6.0
+  -> Wenhan TANG - Insitute of Atmospheric Physics - 07/2021
+              Email: tangwh@mail.iap.ac.cn /
+                     tangwenhanisusu@gmail.com
+##############################################################
+
+Current Version: 6.0
+Published by Wenhan TANG - 2021-08-16
+
+Change log:
+        Version: 1.0 = 2021-05-11 - by Wenhan TANG
+                 * First version of an OSSE experiment.                 
+
+        Version: 2.0 = 2021-05-13 - by Wenhan TANG
+                 * Add Parallel Computing function.
+
+        Version: 2.1 = 2021-05-14 - by Wenhan TANG
+                 * Improve some algorithms of computing HQ and HdQ.
+
+        Version: 3.0 = 2021-05-15 - by Wenhan TANG
+                 * Add Time iteration algorithm.
+
+        Version: 3.1 = 2021-05-25 - by Wenhan TANG
+                 * Add Analyzing tools.
+
+        Version: 4.0 = 2021-06-05 - by Wenhan TANG
+                 * Modify the structure of codes.
+                 * Add OSSE classes.
+
+        Version: 4.1 = 2021-06-06 / 4.2 = 2021-06-12  - by Wenhan TANG
+                 * Optimize the algorithm, greatly increase the speed.
+                   (More than 500 times faster than previous version)
+
+        Version: 5.0 = 2021-06-15 - by Wenhan TANG
+                 * Add the REAL cases algorithm (Backgroud, real observation ...)
+
+        Version: 5.1 = 2021-07-10 - by Wenhan TANG
+                 * Modify the Q matrix iteration algorithm.
+
+        Version: 6.0 = 2021-08-16 - by Wenhan TANG
+                 * Design a new framework for this system.
+                 * Rewrite the codes.
+                 * Rewrite the BenchPlots codes.
+
+Acknowledgement:
+   - Zhiqiang Liu, Ning Zeng (Participate in method design)
+   - Ruqi Yang               (Participate in the benchplots development)
+
+How to run this program:
+
+1) ./init.sh
+    -- Modify the root directory of this program.
+
+2) vi configure.py
+    -- Open this configure file and modify the parameters inside.
+
+3) ./BIS_run.py ( or ./nohuprun.sh )
+    -- Run the top level python script "BIS_run.py" to start running the whole system.
+    -- You can also run this system in the background by running "nohuprun.sh".
+
+4) After the completion of running, the output files BISOUT_*.nc have been saved in $ROOTDIR/output/final (links to ../processing)
+
+5) You can draw BenchMarks by using the package "Analysis" in $ROOTDIR/Bayesian/Analysis
+    -- More details in the README file of Analysis.
+
+Environment:
+
+    - interpreters:
+        bash
+        python3
+
+    - python packages:
+        numpy
+        netCDF4
+        xarray
+        pandas
+        datetime
+        matplotlib
+        time
+        os
+        glob
+        multiprocessing
+
+Boundary data:
+
+    - STILT footprint (necessary)
+        A directory with STILT model output folders inside.
+        (STILT_forBIS_v*.* is recommended here)
+
+    - CO2 flux data (optional)
+        Needed in REAL cases and some OSSE experiments.
+        (Some OSSE experiments need more than one CO2 flux dataset)
+
+    - CO2 obervation data (optional)
+        Usually be necessary in REAL cases, but most of OSSE experiments don't need it.
+
+Other data:
+    - Shape file (optional)
+
+Structure:
+
+#--- src directory ---#
+├── Bayesian 
+
+# Analysis & BenchPlots packages 
+│   ├── Analysis
+│   │   ├── Analyst
+│   │   ├── benchplots_base
+│   │   ├── OSSE
+│   │   ├── proc
+│   │   ├── REAL
+│   │   └── utils
+
+# Analysis package interface code
+│   │   ├── get_benchClass.py
+│   │   ├── get_objBench.py
+
+# Application interface
+│   ├── app.py
+
+# Background CO2 plug-in
+│   ├── background
+│   │   ├── base
+│   │   ├── constant
+│   │   └── wrfbck
+
+# Optimization Core 
+│   ├── core
+│   │   ├── core_3DVar
+│   │   ├── core_4DVar
+│   │   ├── core_optimize
+│   │   ├── indicators
+
+# CO2 emission (for flux) inventories
+│   ├── emiss
+│   │   ├── cfta_1x1.py
+│   │   ├── constant.py
+│   │   ├── MEIC.py
+
+# BIS experiments
+│   ├── experiment
+│   │   ├── exp_base
+│   │   ├── OSSE # OSSE experiments
+│   │   │   ├── const_emiss
+│   │   │   ├── one_another
+│   │   │   ├── OSSE_base
+│   │   └── REAL # REAL experiments
+│   │       ├── independent
+│   │       ├── independent_priorFnet
+│   │       └── REAL_base
+
+# Footprint plug-in
+│   ├── footprint
+│   │   ├── footprint_stilt.py
+
+# Main code
+│   ├── main
+│   │   ├── configure.py
+│   │   ├── main_class.py
+
+# Observation plug-in
+│   ├── observation
+│   │   ├── base
+│   │   ├── picarro
+
+# utiless
+│   └── utils
+
+#--- configure of benchplots ---#
+├── benchplots_configure -> Bayesian/Analysis/benchplots_base/benchplots_configure.py
+
+#--- top-level script of benchplots (user interface) ---#
+├── BenchPlots.py
+
+#--- top-level script of BIS ---#
+├── BIS_run.py
+
+#--- cases links ---#
+├── cases
+
+#--- BIS configuration ---#
+├── configure -> Bayesian/main/configure.py
+
+#--- Multicases shell scripts ---#
+├── GrandSlam
+
+#--- Define the ROOTDIR ---#
+├── init.sh
+
+#--- Make tar file ---#
+├── mktar.sh
+
+#--- Run in the background ---#
+├── nohuprun.sh
+
+#---  REAMDE file ---#
+├── README
+
+#--- tree of the system ---#
+├── README.tree
+
+#--- log of program running ---#
+├── run.log
+
+#--- test directory ---#
+├── test
+
+#--- Make README.tree ---#
+└── tree.sh
+
+for more details, see README.tree
+
+If you have any question about this program, please contact Wenhan TANG at:
+--> "tangwh@mail.iap.ac.cn" or
+--> "tangwenhanisusu@gmail.com"
+
+Thanks for your feedback!
+

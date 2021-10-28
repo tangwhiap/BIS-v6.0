@@ -1,0 +1,298 @@
+========================================
+| Welcome to Bayesian Inversion System |
+|              Version 6.0             |
+|     Email: tangwh@mail.iap.ac.cn     |
+========================================
+Import packages...
+Done.
+Successfully create ExpREAL_independent objcet.
+Successfully create ExpREAL_independent_priorFnet objcet.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/emiss already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/emiss/prior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/emiss/processing already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/emiss/posterior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigma already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigma/prior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigma/processing already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/H_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/E_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/D_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/R_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/obs already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/initConc already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/finalConc already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/output/hourly already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/output/daily already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/output/weekly already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/output/monthly already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/output/all already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/bck/prior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/bck/processing already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigmaBck/prior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigmaBck/processing already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/emiss/fossil_fuel already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/emiss/cfta already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigma/fossil_fuel already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/sigma/cfta already exists.
+E matrix file: /home/tangwh/modeldata/BIS_cases/PR_Ls3_4DVar_afm_REAL/E_save/E_site.nc already exists, skip...
+Optimize:  2018-12-01 00:00:00
+2018-11-30 06:00:00 -> time consume: 1.26 s
+2018-11-30 07:00:00 -> time consume: 1.07 s
+2018-11-30 08:00:00 -> time consume: 1.00 s
+2018-12-02 12:00:00 -> time consume: 1.39 s
+2018-12-02 13:00:00 -> time consume: 0.98 s
+2018-12-02 14:00:00 -> time consume: 0.98 s
+2018-12-04 21:00:00 -> time consume: 1.09 s
+2018-12-04 22:00:00 -> time consume: 1.15 s
+2018-12-04 23:00:00 -> time consume: 1.14 s
+2018-11-30 15:00:00 -> time consume: 1.20 s
+2018-11-30 16:00:00 -> time consume: 0.97 s
+2018-11-30 17:00:00 -> time consume: 1.02 s
+2018-12-02 21:00:00 -> time consume: 1.02 s
+2018-12-02 22:00:00 -> time consume: 1.00 s
+2018-12-02 23:00:00 -> time consume: 1.07 s
+2018-12-05 00:00:00 -> time consume: 1.42 s
+2018-12-05 01:00:00 -> time consume: 1.12 s
+2018-12-05 02:00:00 -> time consume: 1.08 s
+2018-11-30 12:00:00 -> time consume: 1.10 s
+2018-11-30 13:00:00 -> time consume: 1.17 s
+2018-11-30 14:00:00 -> time consume: 0.94 s
+2018-12-02 18:00:00 -> time consume: 1.22 s
+2018-12-02 19:00:00 -> time consume: 1.07 s
+2018-12-02 20:00:00 -> time consume: 1.31 s
+2018-12-05 03:00:00 -> time consume: 1.38 s
+2018-12-05 04:00:00 -> time consume: 1.15 s
+2018-12-05 05:00:00 -> time consume: 1.05 s
+2018-11-30 18:00:00 -> time consume: 1.03 s
+2018-11-30 19:00:00 -> time consume: 1.28 s
+2018-11-30 20:00:00 -> time consume: 0.96 s
+2018-12-03 00:00:00 -> time consume: 1.05 s
+2018-12-03 01:00:00 -> time consume: 0.93 s
+2018-12-03 02:00:00 -> time consume: 1.35 s
+2018-12-05 06:00:00 -> time consume: 1.38 s
+2018-12-05 07:00:00 -> time consume: 1.21 s
+2018-12-05 08:00:00 -> time consume: 1.37 s
+2018-11-30 21:00:00 -> time consume: 1.00 s
+2018-11-30 22:00:00 -> time consume: 0.98 s
+2018-11-30 23:00:00 -> time consume: 0.99 s
+2018-12-03 03:00:00 -> time consume: 1.03 s
+2018-12-03 04:00:00 -> time consume: 0.93 s
+2018-12-03 05:00:00 -> time consume: 1.15 s
+2018-12-05 09:00:00 -> time consume: 1.26 s
+2018-12-05 10:00:00 -> time consume: 1.21 s
+2018-12-05 11:00:00 -> time consume: 1.01 s
+2018-12-01 00:00:00 -> time consume: 1.04 s
+2018-12-01 01:00:00 -> time consume: 1.04 s
+2018-12-01 02:00:00 -> time consume: 0.88 s
+2018-12-03 06:00:00 -> time consume: 0.89 s
+2018-12-03 07:00:00 -> time consume: 1.20 s
+2018-12-03 08:00:00 -> time consume: 1.06 s
+2018-12-05 12:00:00 -> time consume: 1.22 s
+2018-12-05 13:00:00 -> time consume: 1.14 s
+2018-12-05 14:00:00 -> time consume: 1.05 s
+2018-12-01 03:00:00 -> time consume: 1.08 s
+2018-12-01 04:00:00 -> time consume: 0.90 s
+2018-12-01 05:00:00 -> time consume: 1.08 s
+2018-12-03 09:00:00 -> time consume: 1.30 s
+2018-12-03 10:00:00 -> time consume: 1.11 s
+2018-12-03 11:00:00 -> time consume: 0.91 s
+2018-12-05 15:00:00 -> time consume: 1.34 s
+2018-12-05 16:00:00 -> time consume: 1.10 s
+2018-12-05 17:00:00 -> time consume: 1.24 s
+2018-11-29 03:00:00 -> time consume: 0.89 s
+2018-11-29 04:00:00 -> time consume: 1.15 s
+2018-11-29 05:00:00 -> time consume: 0.84 s
+2018-12-01 09:00:00 -> time consume: 0.87 s
+2018-12-01 10:00:00 -> time consume: 1.14 s
+2018-12-01 11:00:00 -> time consume: 1.21 s
+2018-12-03 15:00:00 -> time consume: 1.35 s
+2018-12-03 16:00:00 -> time consume: 0.99 s
+2018-12-03 17:00:00 -> time consume: 1.03 s
+2018-12-05 21:00:00 -> time consume: 1.08 s
+2018-12-05 22:00:00 -> time consume: 1.10 s
+2018-12-05 23:00:00 -> time consume: 1.47 s
+2018-11-29 00:00:00 -> time consume: 0.93 s
+2018-11-29 01:00:00 -> time consume: 0.96 s
+2018-11-29 02:00:00 -> time consume: 1.20 s
+2018-12-01 06:00:00 -> time consume: 0.96 s
+2018-12-01 07:00:00 -> time consume: 0.96 s
+2018-12-01 08:00:00 -> time consume: 1.22 s
+2018-12-03 12:00:00 -> time consume: 1.37 s
+2018-12-03 13:00:00 -> time consume: 0.98 s
+2018-12-03 14:00:00 -> time consume: 1.11 s
+2018-12-05 18:00:00 -> time consume: 1.16 s
+2018-12-05 19:00:00 -> time consume: 1.16 s
+2018-12-05 20:00:00 -> time consume: 1.37 s
+2018-11-29 06:00:00 -> time consume: 1.04 s
+2018-11-29 07:00:00 -> time consume: 1.41 s
+2018-11-29 08:00:00 -> time consume: 1.05 s
+2018-12-01 12:00:00 -> time consume: 1.04 s
+2018-12-01 13:00:00 -> time consume: 1.10 s
+2018-12-01 14:00:00 -> time consume: 1.17 s
+2018-12-03 18:00:00 -> time consume: 1.11 s
+2018-12-03 19:00:00 -> time consume: 1.09 s
+2018-12-03 20:00:00 -> time consume: 1.14 s
+2018-12-06 00:00:00 -> time consume: 0.98 s
+2018-12-06 01:00:00 -> time consume: 1.14 s
+2018-12-06 02:00:00 -> time consume: 1.50 s
+2018-11-29 09:00:00 -> time consume: 1.03 s
+2018-11-29 10:00:00 -> time consume: 0.98 s
+2018-11-29 11:00:00 -> time consume: 1.14 s
+2018-12-01 15:00:00 -> time consume: 1.32 s
+2018-12-01 16:00:00 -> time consume: 0.88 s
+2018-12-01 17:00:00 -> time consume: 1.05 s
+2018-12-03 21:00:00 -> time consume: 1.03 s
+2018-12-03 22:00:00 -> time consume: 0.96 s
+2018-12-03 23:00:00 -> time consume: 1.01 s
+2018-12-06 03:00:00 -> time consume: 1.15 s
+2018-12-06 04:00:00 -> time consume: 1.17 s
+2018-12-06 05:00:00 -> time consume: 1.13 s
+2018-11-29 12:00:00 -> time consume: 1.19 s
+2018-11-29 13:00:00 -> time consume: 1.38 s
+2018-11-29 14:00:00 -> time consume: 1.09 s
+2018-12-01 21:00:00 -> time consume: 1.14 s
+2018-12-01 22:00:00 -> time consume: 0.93 s
+2018-12-01 23:00:00 -> time consume: 0.96 s
+2018-12-04 03:00:00 -> time consume: 1.10 s
+2018-12-04 04:00:00 -> time consume: 0.96 s
+2018-12-04 05:00:00 -> time consume: 1.01 s
+2018-12-06 09:00:00 -> time consume: 1.35 s
+2018-12-06 10:00:00 -> time consume: 0.82 s
+2018-12-06 11:00:00 -> time consume: 1.09 s
+2018-11-29 15:00:00 -> time consume: 1.14 s
+2018-11-29 16:00:00 -> time consume: 0.86 s
+2018-11-29 17:00:00 -> time consume: 1.07 s
+2018-12-01 18:00:00 -> time consume: 1.22 s
+2018-12-01 19:00:00 -> time consume: 0.97 s
+2018-12-01 20:00:00 -> time consume: 1.06 s
+2018-12-04 00:00:00 -> time consume: 1.19 s
+2018-12-04 01:00:00 -> time consume: 1.07 s
+2018-12-04 02:00:00 -> time consume: 0.99 s
+2018-12-06 06:00:00 -> time consume: 1.35 s
+2018-12-06 07:00:00 -> time consume: 1.07 s
+2018-12-06 08:00:00 -> time consume: 1.09 s
+2018-11-29 18:00:00 -> time consume: 0.92 s
+2018-11-29 19:00:00 -> time consume: 0.99 s
+2018-11-29 20:00:00 -> time consume: 1.13 s
+2018-12-02 00:00:00 -> time consume: 1.35 s
+2018-12-02 01:00:00 -> time consume: 0.84 s
+2018-12-02 02:00:00 -> time consume: 1.21 s
+2018-12-04 06:00:00 -> time consume: 0.97 s
+2018-12-04 07:00:00 -> time consume: 1.11 s
+2018-12-04 08:00:00 -> time consume: 1.14 s
+2018-12-06 12:00:00 -> time consume: 1.06 s
+2018-12-06 13:00:00 -> time consume: 0.88 s
+2018-12-06 14:00:00 -> time consume: 1.19 s
+2018-11-30 09:00:00 -> time consume: 1.14 s
+2018-11-30 10:00:00 -> time consume: 1.06 s
+2018-11-30 11:00:00 -> time consume: 1.02 s
+2018-12-02 15:00:00 -> time consume: 1.03 s
+2018-12-02 16:00:00 -> time consume: 0.94 s
+2018-12-02 17:00:00 -> time consume: 0.89 s
+2018-12-04 18:00:00 -> time consume: 0.92 s
+2018-12-04 19:00:00 -> time consume: 1.20 s
+2018-12-04 20:00:00 -> time consume: 1.14 s
+2018-12-07 00:00:00 -> time consume: 1.09 s
+2018-11-30 00:00:00 -> time consume: 1.13 s
+2018-11-30 01:00:00 -> time consume: 1.14 s
+2018-11-30 02:00:00 -> time consume: 1.00 s
+2018-12-02 06:00:00 -> time consume: 0.91 s
+2018-12-02 07:00:00 -> time consume: 0.96 s
+2018-12-02 08:00:00 -> time consume: 1.09 s
+2018-12-04 09:00:00 -> time consume: 1.03 s
+2018-12-04 10:00:00 -> time consume: 1.03 s
+2018-12-04 11:00:00 -> time consume: 0.94 s
+2018-12-06 15:00:00 -> time consume: 1.01 s
+2018-12-06 16:00:00 -> time consume: 1.07 s
+2018-12-06 17:00:00 -> time consume: 1.07 s
+2018-11-30 03:00:00 -> time consume: 1.28 s
+2018-11-30 04:00:00 -> time consume: 1.17 s
+2018-11-30 05:00:00 -> time consume: 1.07 s
+2018-12-02 09:00:00 -> time consume: 1.01 s
+2018-12-02 10:00:00 -> time consume: 1.26 s
+2018-12-02 11:00:00 -> time consume: 1.17 s
+2018-12-04 15:00:00 -> time consume: 1.10 s
+2018-12-04 16:00:00 -> time consume: 0.92 s
+2018-12-04 17:00:00 -> time consume: 1.03 s
+2018-12-06 21:00:00 -> time consume: 1.14 s
+2018-12-06 22:00:00 -> time consume: 0.94 s
+2018-12-06 23:00:00 -> time consume: 1.00 s
+2018-11-29 21:00:00 -> time consume: 1.28 s
+2018-11-29 22:00:00 -> time consume: 1.12 s
+2018-11-29 23:00:00 -> time consume: 1.03 s
+2018-12-02 03:00:00 -> time consume: 1.32 s
+2018-12-02 04:00:00 -> time consume: 1.18 s
+2018-12-02 05:00:00 -> time consume: 1.03 s
+2018-12-04 12:00:00 -> time consume: 1.05 s
+2018-12-04 13:00:00 -> time consume: 0.95 s
+2018-12-04 14:00:00 -> time consume: 1.07 s
+2018-12-06 18:00:00 -> time consume: 1.24 s
+2018-12-06 19:00:00 -> time consume: 1.14 s
+2018-12-06 20:00:00 -> time consume: 1.21 s
+Inversion ...
+Computing reduced uncertainty ...
+Computing INV*HQ ...
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/core_optimize/inversion.py", line 61, in compute_INVHQ
+    INVHQj_IndOp = HQj.to_operator().__rmul__(INV)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/indicators/indicator_operator.py", line 154, in __rmul__
+    return self.__caculator_with_ndarray(other, "*", self_in = "right")
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/indicators/indicator_operator.py", line 89, in __caculator_with_ndarray
+    resData[sector] = self.__caculate_operator(self.data[sector], other, strOperator) if isLeft else self.__caculate_operator(other, self.data[sector], strOperator)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/indicators/indicator_operator.py", line 77, in __caculate_operator
+    exec("result = cac_left " + strOperator + " cac_right")
+  File "<string>", line 1, in <module>
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/site-packages/scipy/sparse/base.py", line 550, in __rmul__
+    return (self.transpose() * tr).transpose()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/site-packages/scipy/sparse/base.py", line 516, in __mul__
+    raise ValueError('dimension mismatch')
+ValueError: dimension mismatch
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./BIS_run.py", line 20, in <module>
+    app.app_run()
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/app.py", line 88, in app_run
+    case.app_run(*args, **kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/main/main_class.py", line 79, in app_run
+    self.objExp.exp_run(*args, **kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/experiment/exp_base/main_class.py", line 684, in exp_run
+    self.objCore.optimize(recepTime = recepTime, objExp = self)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/core_4DVar/main_class.py", line 92, in optimize
+    self.inversion(recepTime = recepTime, objExp = objExp)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/core_4DVar/main_class.py", line 77, in inversion
+    CoreOptimize.inversion(self, objExp = objExp, recepTime = recepTime, tj_range = tj_range)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/core_optimize/main_class.py", line 135, in inversion
+    inversion(self, *args, **kwargs)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/core_optimize/inversion.py", line 145, in inversion
+    pool.map(compute_INVHQ, parallelArgs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 268, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/core_optimize/inversion.py", line 61, in compute_INVHQ
+    INVHQj_IndOp = HQj.to_operator().__rmul__(INV)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/indicators/indicator_operator.py", line 154, in __rmul__
+    return self.__caculator_with_ndarray(other, "*", self_in = "right")
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/indicators/indicator_operator.py", line 89, in __caculator_with_ndarray
+    resData[sector] = self.__caculate_operator(self.data[sector], other, strOperator) if isLeft else self.__caculate_operator(other, self.data[sector], strOperator)
+  File "/home/tangwh/modeling/BIS_v6.0/Bayesian/core/indicators/indicator_operator.py", line 77, in __caculate_operator
+    exec("result = cac_left " + strOperator + " cac_right") 
+  File "<string>", line 1, in <module>
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/site-packages/scipy/sparse/base.py", line 550, in __rmul__
+    return (self.transpose() * tr).transpose()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/site-packages/scipy/sparse/base.py", line 516, in __mul__
+    raise ValueError('dimension mismatch')
+ValueError: dimension mismatch

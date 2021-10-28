@@ -1,0 +1,1 @@
+/home/tangwh/modeldata/BIS_cases/REAL_2020-08_win6_foot48_sgh/config.py

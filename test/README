@@ -1,0 +1,6 @@
+#!/bin/vim
+
+This folder is used for testing and debugging a section of the system.
+
+There is a symbolic link to "Baeysian" package in each test folder.
+

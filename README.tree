@@ -1,0 +1,250 @@
+#!/bin/vim
+Bayesian Inversion System v6.0
+Program structure:
+.
+├── Bayesian
+│   ├── Analysis
+│   │   ├── Analyst
+│   │   │   ├── analyst_independent_priorFnet.py
+│   │   │   ├── analyst_independent.py
+│   │   │   ├── bis_analyst.py
+│   │   │   ├── local_point.py
+│   │   ├── benchplots_base
+│   │   │   ├── benchplots_configure.py
+│   │   │   ├── draw_object_class.py
+│   │   │   ├── main_class.py
+│   │   │   ├── region_timelist_plot.py
+│   │   │   ├── site_timelist_plot.py
+│   │   │   └── spatial_plot.py
+│   │   ├── get_benchClass.py
+│   │   ├── get_objBench.py
+│   │   ├── OSSE
+│   │   │   ├── benchplots_const_emiss
+│   │   │   │   ├── main_class.py
+│   │   │   └── benchplots_osse
+│   │   │       ├── main_class.py
+│   │   ├── proc
+│   │   │   ├── DJF2019
+│   │   │   │   ├── configure.py
+│   │   │   ├── PIS_base
+│   │   │   │   ├── configure.py
+│   │   │   │   └── stations
+│   │   │   │       ├── picarro.py
+│   │   │   │       ├── pis.py
+│   │   │   ├── PIS_Ls1
+│   │   │   │   ├── configure.py
+│   │   │   │   └── stations
+│   │   │   │       ├── picarro.py
+│   │   │   │       ├── pis.py
+│   │   │   ├── PIS_Ls1_Lt96
+│   │   │   │   ├── configure.py
+│   │   │   │   └── stations
+│   │   │   │       ├── picarro.py
+│   │   │   │       ├── pis.py
+│   │   │   ├── real
+│   │   │   │   ├── configure.py
+│   │   │   │   └── stations
+│   │   │   │       ├── picarro.py
+│   │   │   │       ├── pis.py
+│   │   │   ├── test1
+│   │   │   │   ├── configure.py
+│   │   │   │   └── stations
+│   │   │   │       ├── picarro.py
+│   │   │   │       ├── pis.py
+│   │   │   ├── test11
+│   │   │   │   ├── configure.py
+│   │   │   ├── test12
+│   │   │   │   ├── configure.py
+│   │   │   ├── test3
+│   │   │   │   ├── configure.py
+│   │   │   │   └── stations
+│   │   │   │       ├── picarro.py
+│   │   │   │       ├── pis.py
+│   │   │   └── test5
+│   │   │       ├── configure.py
+│   │   │       └── stations
+│   │   │           ├── picarro.py
+│   │   │           ├── pis.py
+│   │   ├── REAL
+│   │   │   ├── benchplots_independent
+│   │   │   │   ├── main_class.py
+│   │   │   ├── benchplots_independent_priorFnet
+│   │   │   │   ├── main_class.py
+│   │   │   ├── benchplots_real
+│   │   │   │   ├── main_class.py
+│   │   ├── test
+│   │   └── utils
+│   │       ├── Bench.py
+│   ├── app.py
+│   ├── background
+│   │   ├── base
+│   │   │   ├── main_class.py
+│   │   ├── constant
+│   │   │   ├── main_class.py
+│   │   └── wrfbck
+│   │       ├── getWrfco2BCK.py
+│   │       ├── main_class.py
+│   ├── core
+│   │   ├── core_3DVar
+│   │   │   ├── main_class.py
+│   │   ├── core_4DVar
+│   │   │   ├── compute_HdQ.py
+│   │   │   ├── main_class.py
+│   │   ├── core_optimize
+│   │   │   ├── background.py
+│   │   │   ├── compute_d.py
+│   │   │   ├── compute_HQHt_R.py
+│   │   │   ├── compute_HQ.py
+│   │   │   ├── compute_Hx.py
+│   │   │   ├── compute_INV.py
+│   │   │   ├── indicators.py
+│   │   │   ├── inversion.py
+│   │   │   ├── iteration.py
+│   │   │   ├── main_class.py
+│   │   ├── indicators
+│   │   │   ├── indicator_operator.py
+│   │   │   ├── indicator.py
+│   │   │   ├── sectors_indicator.py
+│   │   │   ├── temp_indicator.py
+│   │   │   └── types_indicator.py
+│   ├── emiss
+│   │   ├── cfta_1x1.py
+│   │   ├── constant.py
+│   │   ├── MEIC.py
+│   │   ├── NDRC.py
+│   │   └── _utils.py
+│   ├── experiment
+│   │   ├── exp_base
+│   │   │   ├── compute_Dbck.py
+│   │   │   ├── compute_D.py
+│   │   │   ├── compute_Ebck.py
+│   │   │   ├── compute_E.py
+│   │   │   ├── compute_R.py
+│   │   │   ├── compute_sigma.py
+│   │   │   ├── concentration.py
+│   │   │   ├── indicators.py
+│   │   │   ├── main_class.py
+│   │   │   ├── make_output.py
+│   │   ├── OSSE
+│   │   │   ├── const_emiss
+│   │   │   │   ├── indicators.py
+│   │   │   │   ├── main_class.py
+│   │   │   ├── one_another
+│   │   │   │   ├── indicators.py
+│   │   │   │   ├── main_class.py
+│   │   │   ├── OSSE_base
+│   │   │   │   ├── indicators.py
+│   │   │   │   ├── main_class.py
+│   │   └── REAL
+│   │       ├── independent
+│   │       │   ├── indicators.py
+│   │       │   ├── main_class.py
+│   │       ├── independent_priorFnet
+│   │       │   ├── main_class.py
+│   │       └── REAL_base
+│   │           ├── indicators.py
+│   │           ├── main_class.py
+│   ├── footprint
+│   │   ├── footprint_stilt.py
+│   │   └── test
+│   │       ├── footprint_stilt.py -> ../footprint_stilt.py
+│   │       ├── test1.py
+│   │       └── test.py
+│   ├── main
+│   │   ├── configure.py
+│   │   ├── main_class.py
+│   │   └── stations
+│   │       ├── picarro.py
+│   │       ├── pis.py
+│   ├── observation
+│   │   ├── base
+│   │   │   ├── main_class.py
+│   │   ├── picarro
+│   │   │   ├── getdata.py
+│   │   │   ├── GetStationInfo.py
+│   │   │   ├── main_class.py
+│   │   │   └── stations_info.txt
+│   └── utils
+│       ├── distance.py
+│       ├── mask_tools.py
+│       ├── module2dic.py
+│       ├── netcdf_io.py
+│       ├── show_progress.py
+│       └── sparse_matrix.py
+├── benchplots_configure -> Bayesian/Analysis/benchplots_base/benchplots_configure.py
+├── BenchPlots.py
+├── BIS_run.py
+├── cases
+│   ├── PIS_base -> /home/tangwh/modeldata/BIS_cases/PIS_base
+│   ├── PIS_Ls1 -> /home/tangwh/modeldata/BIS_cases/PIS_Ls1
+│   ├── PIS_Ls1_Lt96 -> /home/tangwh/modeldata/BIS_cases/PIS_Ls1_Lt96
+│   ├── PIS_Ls1_Lt96_1 -> /home/tangwh/modeldata/BIS_cases/PIS_Ls1_Lt96_1
+│   ├── PIS_Ls3 -> /home/tangwh/modeldata/BIS_cases/PIS_Ls3
+│   ├── PIS_Ls3_mobile -> /home/tangwh/modeldata/BIS_cases/PIS_Ls3_mobile
+│   ├── PIS_Ls3_NDRC -> /home/tangwh/modeldata/BIS_cases/PIS_Ls3_NDRC
+│   ├── PR_base -> /home/tangwh/modeldata/BIS_cases/PR_base
+│   ├── PR_Ls3_NDRC -> /home/tangwh/modeldata/BIS_cases/PR_Ls3_NDRC
+│   ├── real -> /home/tangwh/modeldata/BIS_cases/real
+│   ├── temp -> /home/tangwh/modeldata/BIS_cases/temp
+│   ├── test1 -> /home/tangwh/modeldata/BIS_cases/test1
+│   ├── test2 -> /home/tangwh/modeldata/BIS_cases/test2
+│   ├── test3 -> /home/tangwh/modeldata/BIS_cases/test3
+│   ├── test_3DVar -> /home/tangwh/modeldata/BIS_cases/test_3DVar
+│   ├── test4 -> /home/tangwh/modeldata/BIS_cases/test4
+│   ├── test_4DVar -> /home/tangwh/modeldata/BIS_cases/test_4DVar
+│   ├── test_4DVar_1mon -> /home/tangwh/modeldata/BIS_cases/test_4DVar_1mon
+│   └── test5 -> /home/tangwh/modeldata/BIS_cases/test5
+├── configure -> Bayesian/main/configure.py
+├── draw.log
+├── GrandSlam
+├── init.sh
+├── mktar.sh
+├── nohuprun.sh
+├── plots
+├── README
+├── README.tree
+├── run.log
+├── stations -> Bayesian/main/stations/
+├── test
+│   ├── analyst_test
+│   │   ├── Bayesian -> ../../Bayesian/
+│   │   ├── test1.py
+│   │   ├── test2.py
+│   │   ├── test3.py
+│   │   ├── test4.py
+│   │   ├── test5.py
+│   │   ├── test6.py
+│   │   └── test7.py
+│   ├── background_test
+│   │   ├── Bayesian -> ../../Bayesian
+│   │   └── test.py
+│   ├── bench_test
+│   │   ├── Bayesian -> ../../Bayesian
+│   │   └── test1.py
+│   ├── BisCase_test
+│   │   ├── Bayesian -> ../../Bayesian/
+│   │   └── test.py
+│   ├── core_test
+│   │   └── HQc_test
+│   │       ├── Bayesian -> ../../../Bayesian/
+│   │       └── test1.py
+│   ├── emiss_test
+│   │   ├── Bayesian -> ../../Bayesian/
+│   │   └── NDRC_test.py
+│   ├── indicators_test
+│   │   ├── 1
+│   │   │   ├── Bayesian -> ../../../Bayesian/
+│   │   │   └── test1.py
+│   │   └── 2
+│   │       ├── Bayesian -> ../../../Bayesian/
+│   │       └── test1.py
+│   ├── obs_test
+│   │   └── picarro
+│   │       ├── Bayesian -> ../../../Bayesian/
+│   │       └── test.py
+│   └── README
+└── tree.sh
+
+161 directories, 434 files
+# Created by tree.sh
+

@@ -1,0 +1,77 @@
+nohup: ignoring input
+point_region_timeSeries_daily.pdf
+point_region_timeSeries_hourly.pdf
+point_region_timeSeries_weekly.pdf
+site_timeSeries.pdf
+spatial_daily.pdf
+spatial_weekly.pdf
+configure.txt
+========================================
+| Welcome to Bayesian Inversion System |
+|              Version 6.0             |
+|     Email: tangwh@mail.iap.ac.cn     |
+========================================
+Import packages...
+Done.
+===========================================================
+| Welcome to Bayesian Inversion Analysis & Display System |
+|                      version 6.0                        |
+|             Email: tangwh@mail.iap.ac.cn                |
+===========================================================
+cp -p /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/configure.py /home/tangwh/public_html/BIS_show/PIS_Ls3_4DVar_trad/configure.txt
+Successfully create ExpOSSE_const_emiss objcet.
+Successfully create an analyst object of case: PIS_Ls3_4DVar_trad.
+drawing site: pi310
+drawing site: pi316
+drawing site: pi351
+drawing site: pi355
+drawing site: pi356
+drawing site: pi357
+drawing site: pi358
+drawing site: pi368
+drawing site: pi371
+drawing site: pi373
+drawing site: pi393
+drawing site: pi402
+drawing site: pi405
+drawing site: pi424
+drawing site: pi426
+drawing site: pi430
+drawing site: pi431
+drawing site: pi440
+drawing site: pi445
+drawing site: pi449
+drawing site: pi458
+drawing site: pi460
+drawing site: pi471
+drawing site: pi473
+drawing site: pi483
+drawing site: pi485
+drawing site: pi486
+drawing site: pi494
+drawing site: pi497
+drawing site: pi616
+drawing site: pi623
+drawing site: pi629
+drawing site: pi634
+drawing site: pi637
+drawing site: pi640
+drawing site: pi641
+drawing site: pi644
+drawing site: pi646
+drawing site: pi648
+drawing site: pi652
+drawing site: pi655
+drawing site: pi663
+drawing site: pi672
+drawing site: pi679
+drawing site: pi681
+drawing site: pi684
+drawing site: pi687
+drawing site: pi693
+drawing site: pi698
+drawing site: pi710
+drawing site: pi711
+drawing site: pi720
+drawing site: pi808
+Make tar file ...

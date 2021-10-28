@@ -1,0 +1,876 @@
+========================================
+| Welcome to Bayesian Inversion System |
+|              Version 6.0             |
+|     Email: tangwh@mail.iap.ac.cn     |
+========================================
+Import packages...
+Done.
+Successfully create ExpOSSE_const_emiss objcet.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/emiss already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/emiss/prior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/emiss/processing already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/emiss/posterior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/sigma already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/sigma/prior already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/sigma/processing already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/E_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/D_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/R_save already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/obs already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/initConc already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/finalConc already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/output/hourly already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/output/daily already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/output/weekly already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/output/monthly already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/output/all already exists.
+Directory: /home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/emiss/truth already exists.
+make_prior!!!
+Process ForkPoolWorker-45:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968HDF5-DIAG: Error detected in HDF5 (1.10.4) :
+thread 46984558091968  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+:
+    major: File accessibilty
+    minor: Unable to open file
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    major: File accessibilty
+    minor: Unable to open file
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-07_18:00:00_r2019-01-09_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    major: File accessibilty
+    minor: Unable to open file
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-08_01:00:00_r2019-01-08_12:00:00.nc', tent_flags = 13
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: File accessibilty
+    major: Virtual File Layer
+    minor: Unable to initialize object
+    minor: Unable to open file
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-07_18:00:00_r2019-01-09_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    minor: Unable to open file
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-08_01:00:00_r2019-01-08_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-05_16:00:00_r2019-01-07_00:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-05_16:00:00_r2019-01-07_00:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-20_22:00:00_r2019-01-21_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-20_22:00:00_r2019-01-21_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-47:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process ForkPoolWorker-46:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process ForkPoolWorker-44:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process ForkPoolWorker-38:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-16_18:00:00_r2019-01-18_00:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-16_18:00:00_r2019-01-18_00:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-39:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-12_12:00:00_r2019-01-14_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-12_12:00:00_r2019-01-14_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-37:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-18_20:00:00_r2019-01-19_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-18_20:00:00_r2019-01-19_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-42:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-01_04:00:00_r2019-01-02_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-01_04:00:00_r2019-01-02_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-53:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-09_22:00:00_r2019-01-10_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-09_22:00:00_r2019-01-10_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-40:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-11_12:00:00_r2019-01-13_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-11_12:00:00_r2019-01-13_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-54:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-14_00:00:00_r2019-01-16_00:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-14_00:00:00_r2019-01-16_00:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-52:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-10_05:00:00_r2019-01-12_00:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-10_05:00:00_r2019-01-12_00:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-49:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-04_00:00:00_r2019-01-06_00:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-04_00:00:00_r2019-01-06_00:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-43:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2018-12-31_06:00:00_r2018-12-31_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2018-12-31_06:00:00_r2018-12-31_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-51:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-18_12:00:00_r2019-01-20_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-18_12:00:00_r2019-01-20_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-41:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-15_00:00:00_r2019-01-17_00:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-15_00:00:00_r2019-01-17_00:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-48:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+HDF5-DIAG: Error detected in HDF5 (1.10.4) thread 46984558091968:
+  #000: H5F.c line 444 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5Fint.c line 1364 in H5F__create(): unable to open file
+    major: File accessibilty
+    minor: Unable to open file
+  #002: H5Fint.c line 1559 in H5F_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-01_12:00:00_r2019-01-03_12:00:00.nc', tent_flags = 13
+    major: File accessibilty
+    minor: Unable to open file
+  #003: H5FD.c line 734 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #004: H5FDsec2.c line 346 in H5FD_sec2_open(): unable to open file: name = '/home/tangwh/modeldata/BIS_cases/PIS_Ls3_4DVar_trad/H_save/H_site_t2019-01-01_12:00:00_r2019-01-03_12:00:00.nc', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242
+    major: File accessibilty
+    minor: Unable to open file
+Process ForkPoolWorker-50:
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 127, in worker
+    put((job, i, result))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/pool.py", line 132, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/queues.py", line 364, in put
+    self._writer.send_bytes(obj)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/home/tangwh/software/anaconda3/envs/wrfco2/lib/python3.7/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
